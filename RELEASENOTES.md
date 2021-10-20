@@ -20,6 +20,10 @@
 -->
 # Release Notes
 
+### 5.0.2-j5int.1 (OCt 20, 2021)
+* Add Android 11 required intents to AndroidManifest.xml to be able to interact with the native camera app
+* Changed logic to only use internal storage to avoid Android 11 file permission issue
+
 ### 5.0.2 (May 11, 2021)
 * [GH-728](https://github.com/apache/cordova-plugin-camera/pull/728) plugin release preparation - audit fix
 * [GH-700](https://github.com/apache/cordova-plugin-camera/pull/700) Bugfix [issue 665](https://github.com/apache/cordova-plugin-camera/issues/665) - app crashes after taking a picture due to a bug in the camera plugin when app is resumed
