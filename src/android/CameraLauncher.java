@@ -1285,11 +1285,7 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
      * @return Uri
      */
     private Uri whichContentStore() {
-        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            return MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-        } else {
-            return MediaStore.Images.Media.INTERNAL_CONTENT_URI;
-        }
+        return MediaStore.Images.Media.INTERNAL_CONTENT_URI;
     }
 
     /**
